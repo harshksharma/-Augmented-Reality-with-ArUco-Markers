@@ -29,7 +29,8 @@ The webcam will detect the ArUco marker and project the video onto the marker. T
 Controls
 q: Press this key to exit the video projection.
 
-Explanation of Files
+Explanation of Files:-
+
 main.py
 a)Webcam Capture: It opens the webcam feed and captures each frame.
 b)ArUco Detection: It detects ArUco markers in the webcam feed using OpenCV.
