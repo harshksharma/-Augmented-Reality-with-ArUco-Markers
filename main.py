@@ -7,7 +7,7 @@ import threading
 cap = cv2.VideoCapture(0)  # Webcam
 
 # Load the video file using moviepy
-video_path = 'your-video-mp4'
+video_path = 'tnm.mp4'
 clip = VideoFileClip(video_path)
 video_cap = cv2.VideoCapture(video_path)  # Video to be projected
 
@@ -58,8 +58,8 @@ def play_audio():
     clip.audio.preview()
 
 # ArUco dictionary and parameters
-aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_250)
-parameters = cv2.aruco.DetectorParameters_create()
+aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
+parameters = cv2.aruco.DetectorParameters()
 
 audio_playing = False
 audio_thread = None
